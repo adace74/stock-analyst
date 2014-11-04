@@ -1,0 +1,46 @@
+######################################################################
+#
+# $Id: profile.txt 218 2014-10-22 16:17:43Z adace $
+#
+# Description: Bash shell configuration.
+#
+######################################################################
+
+# Get global aliases and functions.
+if [ `uname` == "Linux" ]; then
+	if [ -f ~/.bashrc ]; then
+		. ~/.bashrc
+	fi
+fi
+
+# Additional file descriptors for Apache Traffic Server.
+ulimit -c unlimited
+ulimit -n 1024
+
+# Fink
+test -r /sw/bin/init.sh && . /sw/bin/init.sh
+
+# Environment
+export CLASSPATH="."
+export LANG="C"
+export MANPATH="/usr/local/man:/usr/share/man:/usr/local/share/man:/usr/X11/share/man:/sw/share/man:/usr/X11/man:/sw/lib/perl5/5.12.3/man:/usr/X11R6/man:/sw/lib/perl5-core/5.12.4/man:/sw/lib/perl5/5.12.4/man"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/sw/lib/perl5/ExtUtils:/sw/bin:/sw/sbin:/usr/X11R6/bin"
+export PS1="<\u@\h:\w> "
+#export PS1="\[\033[38;5;21m<\033[1;36;40m\u\033[1;34;40m@\033[1;36;40m\h\033[1;34;40m:\033[1;36;40m\w\[\033[0;34;40m>\033[1;36;40m "
+export SVN_EDITOR="vi"
+
+# Aliases
+alias sparkle='ssh -6 adace@sparkle.adamdace.info'
+alias ll='ls -l'
+alias ls='ls --color=never'
+alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
+#alias scp='scp -6'
+#alias ssh='ssh -6'
+alias svn='svn18'
+alias top='top -d 5'
+alias xemacs='xemacs -fg cyan -bg black'
+
+echo
+echo "System Uptime:"
+uptime
+echo
