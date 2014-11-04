@@ -44,5 +44,3 @@ echo
 echo "System Uptime:"
 uptime
 echo
-
-echo
