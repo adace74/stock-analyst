@@ -1,7 +1,7 @@
 #!/bin/bash
 ######################################################################
 #
-# $Id: startup.sh 111 2013-10-15 20:44:21Z adace $
+# $Id$
 #
 # Description: Quick-hack date synchronization script for Mac OS X.
 #

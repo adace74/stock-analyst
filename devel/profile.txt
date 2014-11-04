@@ -1,6 +1,6 @@
 ######################################################################
 #
-# $Id: profile.txt 218 2014-10-22 16:17:43Z adace $
+# $Id$
 #
 # Description: Bash shell configuration.
 #

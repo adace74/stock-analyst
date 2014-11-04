@@ -1,7 +1,7 @@
 #!/bin/bash
 ######################################################################
 #
-# $Id: startup.sh 186 2014-05-13 15:00:14Z adace $
+# $Id$
 #
 # Description: Quick-hack sysctl script for Linux.
 #

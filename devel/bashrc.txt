@@ -1,6 +1,6 @@
 ######################################################################
 #
-# $Id: bashrc.txt 206 2014-08-22 02:28:10Z adace $
+# $Id$
 #
 # Description: Bash shell configuration.
 #

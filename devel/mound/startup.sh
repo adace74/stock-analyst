@@ -1,7 +1,7 @@
 #!/bin/bash
 ######################################################################
 #
-# $Id: startup.sh 223 2014-11-04 21:58:07Z adace $
+# $Id$
 #
 # Description: Quick-hack startup script for Mac OS X.
 #
