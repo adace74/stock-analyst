@@ -1,0 +1,12 @@
+[Unit]
+Description=Apache Traffic Server
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/trafficserver start
+ExecReload=/usr/local/bin/trafficserver reload
+ExecStop=/usr/local/bin/trafficserver stop
+
+[Install]
+WantedBy=multi-user.target
