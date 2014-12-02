@@ -3,10 +3,10 @@ Description=Apache Traffic Server
 After=network.target remote-fs.target nss-lookup.target
 
 [Service]
-Type=forking
-ExecStart=/usr/local/bin/trafficserver start
-ExecReload=/usr/local/bin/trafficserver reload
-ExecStop=/usr/local/bin/trafficserver stop
+Type=simple
+PIDFile=/usr/local/var/trafficserver/cop.pid
+ExecStart=/usr/local/bin/traffic_cop
+ExecReload=/usr/local/bin/traffic_line -x
 
 [Install]
 WantedBy=multi-user.target

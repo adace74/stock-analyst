@@ -6,7 +6,6 @@ After=syslog.target network.target
 Type=simple
 ExecStart=/usr/sbin/vnstatd -d
 ExecStop=/bin/kill $MAINPID
-PIDFile=/run/vnstatd.pid
 
 [Install]
 WantedBy=multi-user.target
