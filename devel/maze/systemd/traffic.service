@@ -1,6 +1,6 @@
 [Unit]
 Description=Apache Traffic Server
-After=syslog.target network.target
+After=network.target remote-fs.target nss-lookup.target
 
 [Service]
 Type=forking

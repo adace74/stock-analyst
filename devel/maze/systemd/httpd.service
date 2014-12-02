@@ -1,10 +1,9 @@
 [Unit]
 Description=Apache HTTP Server
-After=syslog.target network.target
+After=network.target remote-fs.target nss-lookup.target
 
 [Service]
 Type=forking
-PIDFile=/usr/local/apache2/logs/httpd.pid
 ExecStart=/usr/local/apache2/bin/apachectl start
 ExecReload=/usr/local/apache2/bin/apachectl reload
 ExecStop=/usr/local/apache2/bin/apachectl stop
