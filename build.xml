@@ -1,0 +1,53 @@
+<!--
+  - $Id$
+  -
+  - Description: Main buildfile for the project.
+  -
+  - TODO: Should reference proper XML schema...see old distribulator
+  -       source for example.
+-->
+
+<project name="DesktopDashboard" default="dist" basedir=".">
+    <description>
+        Main buildfile for the project.
+    </description>
+  
+    <!-- set global properties for this build -->
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist"  location="."/>
+
+    <target name="init">
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+    </target>
+
+    <target name="compile" depends="init" description="compile source" >
+        <!-- Compile the java code from ${src} into ${build} -->
+        <javac srcdir="${src}" destdir="${build}">
+        </javac>
+    </target>
+
+    <target name="dist" depends="compile" description="generate distribution" >
+        <!-- Create the distribution directory -->
+        <mkdir dir="${dist}/lib"/>
+
+        <!-- Put everything in ${build} into the DesktopDashboard.jar file -->
+        <jar jarfile="${dist}/lib/DesktopDashboard.jar" basedir="${build}">
+            <manifest>
+                <attribute name="Main-Class" value="net.sourceforge.ddashboard.Main"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean" description="remove build classfiles and jars" >
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}/net"/>
+        <delete file="${dist}/lib/DesktopDashboard.jar"/>
+        <!-- <delete dir="${dist}"/> -->
+    </target>
+
+    <target name="run" description="startup application" >
+        <java jar="lib/DesktopDashboard.jar" fork="true"/>
+    </target>
+</project>
