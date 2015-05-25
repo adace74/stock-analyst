@@ -39,7 +39,9 @@ alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
 if [ `uname` == "Linux" ]; then
 	alias ls='ls --color=never'
 	alias top='top -d 5'
-else
+fi
+
+if [ `uname` == "Darwin" ]; then
 	alias top='top -o cpu -s 5'
 fi
 
