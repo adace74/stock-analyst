@@ -20,7 +20,6 @@ umask 0022
 
 # Environment
 export CLASSPATH="."
-export HOMEBREW_GITHUB_API_TOKEN="cbc55ca92de541108c584e4810533de769fffb73"
 export http_proxy="http://webcache.adamdace.info:8080/"
 export HTTP_PROXY="http://webcache.adamdace.info:8080/"
 export MANPATH="/usr/local/man:/usr/share/man:/usr/local/share/man:/usr/X11/share/man:/sw/share/man:/usr/X11/man:/sw/lib/perl5/5.12.3/man:/usr/X11R6/man:/sw/lib/perl5-core/5.12.4/man:/sw/lib/perl5/5.12.4/man"
@@ -30,7 +29,9 @@ export PS1="<\u@\h:\w> "
 export SVN_EDITOR="vi"
 
 # Generic Aliases
+alias antelope='ssh adace@antelope.adamdace.info'
 alias maze='ssh -6 adace@maze.adamdace.info'
+alias rift='ssh adace@rift.adamdace.info'
 alias ll='ls -l'
 alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
 #alias xemacs='xemacs -fg cyan -bg black'
