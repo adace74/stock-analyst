@@ -29,8 +29,8 @@ export PS1="<\u@\h:\w> "
 export SVN_EDITOR="vi"
 
 # Generic Aliases
-alias antelope='ssh adace@antelope.adamdace.info'
-alias maze='ssh -6 adace@maze.adamdace.info'
+alias antelope='ssh -6 adace@antelope.adamdace.info'
+alias lizards='ssh adace@lizards.adamdace.info'
 alias rift='ssh adace@rift.adamdace.info'
 alias ll='ls -l'
 alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
