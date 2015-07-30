@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 ######################################################################
 #
 # $Id$
@@ -9,8 +9,7 @@
 
 echo "INFO: Stopping Apache Traffic Server..."
 /usr/local/bin/trafficserver stop
-/bin/sleep 1
-/bin/ls -l /usr/local/var/trafficserver/ &> /dev/null
+sleep 1
 echo "INFO: Starting Apache Traffic Server..."
 /usr/local/bin/trafficserver start
 echo "INFO: Done."

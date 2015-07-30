@@ -20,8 +20,8 @@ umask 0022
 
 # Environment
 export CLASSPATH="."
-export http_proxy="http://webcache.adamdace.info:8080/"
-export HTTP_PROXY="http://webcache.adamdace.info:8080/"
+#export http_proxy="http://webcache.adamdace.info:8080/"
+#export HTTP_PROXY="http://webcache.adamdace.info:8080/"
 export MANPATH="/usr/local/man:/usr/share/man:/usr/local/share/man:/usr/X11/share/man:/sw/share/man:/usr/X11/man:/sw/lib/perl5/5.12.3/man:/usr/X11R6/man:/sw/lib/perl5-core/5.12.4/man:/sw/lib/perl5/5.12.4/man"
 export PAGER="less"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/sw/lib/perl5/ExtUtils:/sw/bin:/sw/sbin:/usr/X11R6/bin"
