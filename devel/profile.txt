@@ -31,7 +31,6 @@ export SVN_EDITOR="vi"
 
 # Generic Aliases
 alias antelope='ssh -6 adace@antelope.adamdace.info'
-alias rift='ssh -6 adace@rift.adamdace.info'
 alias ll='ls -l'
 alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
 #alias xemacs='xemacs -fg cyan -bg black'
