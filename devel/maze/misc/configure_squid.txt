@@ -1,0 +1,1 @@
+./configure --disable-http-violations --disable-auth --disable-external-acl-helpers --disable-url-rewrite-helpers --disable-storeid-rewrite-helpers

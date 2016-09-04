@@ -1,0 +1,6 @@
+1) cmake -D CMAKE_BUILD_TYPE="Release" ../llvm-3.8.1.src
+2) Add C_INCLUDE_PATH to clang config.h file.
+
+#define C_INCLUDE_DIRS "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/c++/4.2.1"
+
+3) Compile!
