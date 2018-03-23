@@ -1,7 +1,0 @@
-1) Clang:
-
-Before configure:
-
-export CC="clang"
-export CXX="clang"
-export LDFLAGS="-L/usr/local/lib -lc++"

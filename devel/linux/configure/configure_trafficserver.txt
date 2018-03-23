@@ -1,1 +1,0 @@
-./configure --disable-luajit --with-xml=libxml2 --with-libxml2
